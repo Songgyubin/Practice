@@ -17,6 +17,7 @@ var isAvailableBirth = false
 var isAvailableGender = false
 var isAvailableService = false
 
+
 fun EditText.checkEmail(btn: Button) {
 
     this.addTextChangedListener(object : TextWatcher {
@@ -43,7 +44,7 @@ fun EditText.checkPw(btn: Button) {
             else if (!Pattern.compile(alpha).matcher(s).find()) isAvailablePw = false
             else isAvailablePw = true
 
-            println("pw $isAvailablePw")
+//            println("pw $isAvailablePw")
             btn.isEnabled = checkAvailable()
         }
     })
@@ -56,9 +57,7 @@ fun EditText.checkPwCheck(pw: EditText, btn: Button) {
             isAvailablePwCheck = s.toString() == pw.text.toString()
             btn.isEnabled = checkAvailable()
         }
-
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
             btn.isEnabled = checkAvailable()
         }
     })
