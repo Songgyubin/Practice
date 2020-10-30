@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="genderMan">남성</string>
-    <string name="genderWoman">여성</string>
-    <string name="genderNoChoice">선택 안 함</string>
-    <string name="serviceAgree">약관 동의 (필수)</string>
-    <string name="marketingAgree">마케팅 동의 (선택)</string>
-    <string name="sign_up">회원가입</string>
-</resources>
